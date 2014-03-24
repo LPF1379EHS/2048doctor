@@ -1,4 +1,4 @@
-﻿function HTMLActuator() {
+function HTMLActuator() {
   this.tileContainer    = document.querySelector(".tile-container");
   this.scoreContainer   = document.querySelector(".score-container");
   this.bestContainer    = document.querySelector(".best-container");
@@ -131,15 +131,16 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 
 HTMLActuator.prototype.message = function (won) {
   var mytxt=new Array(9);
-  mytxt[0]="Trust Me, I'm a Doctor";
-  mytxt[1]="Trust Me, I'm a Doctor";
-  mytxt[2]="Trust Me, I'm a Doctor";
-  mytxt[3]="Trust Me, I'm a Doctor";
-  mytxt[4]="Trust Me, I'm a Doctor";
-  mytxt[5]="Trust Me, I'm a Doctor";
-  mytxt[6]="Trust Me, I'm a Doctor";
-  mytxt[7]="Fantastic";
-  mytxt[8]="allons-y";
+  mytxt[0]="
+hello，madara”;
+  mytxt[1]="hello，madara";
+  mytxt[2]="hello，madara";
+  mytxt[3]="hello，madara";
+  mytxt[4]="hello，madara";
+  mytxt[5]="hello，madara";
+  mytxt[6]="hello，madara";
+  mytxt[7]="hello，madara";
+  mytxt[8]="hello，madara";
 
 
   var text3 = function (m) { var r = 0; while (m > 1) r++, m >>= 1; return r; }
@@ -166,7 +167,7 @@ HTMLActuator.prototype.clearMessage = function () {
 
 HTMLActuator.prototype.scoreTweetButton = function () {
   var Doctor = document.createElement("a");
-  Doctor.classList.add("Doctor-button");
+  Doctor.classList.add(“hashirama-button");
   Doctor.setAttribute("href", "http://pan.baidu.com/s/1o6FegPW");
   Doctor.textContent = "福利";
 
